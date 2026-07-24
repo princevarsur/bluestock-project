@@ -26,48 +26,49 @@ The platform was built sequentially over 6 structured Sprints spanning Days 1 to
 
 ```mermaid
 gantt
-    title Project Nifty 45-Day Sprint Roadmap
+    title Project Nifty 45-Day Sprint Roadmap (13th June – 28th July)
     dateFormat  YYYY-MM-DD
-    section Sprint 1
-    Data Ingestion & DQ Validation      :active, s1, 2026-06-16, 7d
-    section Sprint 2
-    Ratio Engine & Capital Allocation    :active, s2, 2026-06-23, 7d
-    section Sprint 3
-    Screener & Peer Percentile Engine   :active, s3, 2026-06-30, 7d
-    section Sprint 4
-    Streamlit Dashboard & Valuation     :active, s4, 2026-07-07, 7d
-    section Sprint 5
-    ReportLab PDF Tearsheet Engine      :active, s5, 2026-07-14, 7d
-    section Sprint 6
-    K-Means ML & FastAPI REST Backend   :active, s6, 2026-07-21, 10d
+    axisFormat  %b %d
+    section Sprint 1 (Days 1-7)
+    Data Ingestion & DQ Validation      :active, s1, 2026-06-13, 2026-06-19
+    section Sprint 2 (Days 8-14)
+    Ratio Engine & Capital Allocation   :active, s2, 2026-06-20, 2026-06-26
+    section Sprint 3 (Days 15-21)
+    Screener & Peer Percentile Engine   :active, s3, 2026-06-27, 2026-07-03
+    section Sprint 4 (Days 22-28)
+    Streamlit Dashboard & Valuation    :active, s4, 2026-07-04, 2026-07-10
+    section Sprint 5 (Days 29-35)
+    ReportLab PDF Tearsheet Engine     :active, s5, 2026-07-11, 2026-07-17
+    section Sprint 6 (Days 36-45)
+    K-Means ML & FastAPI REST Backend  :active, s6, 2026-07-18, 2026-07-28
 ```
 
-### 🔹 Sprint 1 (Days 1–7): Data Ingestion & Relational Database Architecture
+### 🔹 Sprint 1 (Days 1–7: June 13th – June 19th): Data Ingestion & Relational Database Architecture
 * Ingested 7 core financial spreadsheets and 5 supporting datasets into a structured SQLite database (`data/nifty100.db`).
 * Built a **16-rule Data Quality (DQ) Validator** (`DQ-01` to `DQ-16`) to catch negative sales, missing keys, date mismatches, and mathematical balance sheet discrepancies.
 * Standardized 92 constituent company tickers and normalized 10-year financial dates into uniform `YYYY-MM` formats.
 
-### 🔹 Sprint 2 (Days 8–14): Financial Ratio Engine & Capital Allocation Classifier
+### 🔹 Sprint 2 (Days 8–14: June 20th – June 26th): Financial Ratio Engine & Capital Allocation Classifier
 * Engineered a core KPI calculator computing 17 financial ratios (ROE, ROCE, OPM, NPM, D/E, ICR, FCF, Sales/PAT CAGR).
 * Implemented the **8-Pattern Capital Allocation Matrix** classifying companies based on Cash Flow signs (CFO, CFI, CFF) into strategic corporate archetypes (*Reinvestors*, *Shareholder Returners*, *Debt-Funded Growth*, etc.).
 * Formulated a **Winsorised Composite Quality Rating** ($0.30 \times \text{ROE} + 0.25 \times \text{FCF} + 0.25 \times \text{ROCE} + 0.20 \times \text{D/E}$).
 * Developed an **Automated Column-Shift Auto-Healer** that dynamically detected and healed 88 misaligned spreadsheet entries.
 
-### 🔹 Sprint 3 (Days 15–21): Screener & Peer Comparison Engine
+### 🔹 Sprint 3 (Days 15–21: June 27th – July 3rd): Screener & Peer Comparison Engine
 * Built a dynamic analyst screener with 15 customizable financial thresholds and 6 strategy presets (*Quality Compounders*, *Value Picks*, *Growth Accelerators*, *Dividend Champions*, *Debt-Free Blue Chips*, *Turnaround Watch*).
 * Developed an 11-industry peer percentile ranking engine utilizing `PERCENTRANK.INC` statistical distribution.
 * Created 8-axis interactive Polar/Radar overlay charts comparing individual company scores against industry peer averages.
 
-### 🔹 Sprint 4 (Days 22–28): Streamlit Analytics Dashboard & Valuation Module
+### 🔹 Sprint 4 (Days 22–28: July 4th – July 10th): Streamlit Analytics Dashboard & Valuation Module
 * Built and deployed the multi-page Streamlit web platform featuring responsive sidebar navigation, interactive Plotly charts, and custom styled CSS tiles.
 * Embedded Discounted Cash Flow (DCF) intrinsic valuation and relative valuation models (P/E, P/B, EV/EBITDA target multiples).
 * Implemented an NLP-based Qualitative Pros & Cons rule engine evaluating financial health signals into structured strengths and concerns.
 
-### 🔹 Sprint 5 (Days 29–35): Institutional Tearsheet & PDF Report Engine
+### 🔹 Sprint 5 (Days 29–35: July 11th – July 17th): Institutional Tearsheet & PDF Report Engine
 * Built an automated PDF publishing pipeline combining ReportLab and Matplotlib graphics.
 * Generated **89 individual company 2-page tearsheets**, **11 sector intelligence summaries**, and a **Master Portfolio Report PDF**.
 
-### 🔹 Sprint 6 (Days 36–45): Machine Learning Clustering & FastAPI RESTful Backend
+### 🔹 Sprint 6 (Days 36–45: July 18th – July 28th): Machine Learning Clustering & FastAPI RESTful Backend
 * Developed an unsupervised **K-Means Clustering model** categorizing companies into strategic financial clusters (validated via Elbow curves, Silhouette scores, and Pearson correlation heatmaps).
 * Deployed a production-ready **FastAPI backend** (`src/api/main.py`) exposing 16 REST endpoints with strict NaN-to-null JSON compliance.
 * Built a full automated unit and integration test suite featuring **124 passing test cases** (`pytest`).

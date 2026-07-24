@@ -20,40 +20,20 @@ By integrating advanced financial ratio engines, machine learning clustering, na
 
 ---
 
-## 🗓️ The 45-Day Project Nifty Development Journey
+## 🗓️ 45-Day Internship Roadmap (June 13 – July 28)
 
-The platform was built sequentially over 6 structured Sprints spanning Days 1 to 45:
+The platform was built sequentially across 6 structured Sprints during the 45-day internship:
 
-```mermaid
-gantt
-    title Project Nifty 45-Day Sprint Roadmap (13th June – 28th July)
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-    todayMarker off
-    section Sprint 1 (Days 1-7)
-    Data Ingestion & DQ Validation      :s1, 2026-06-13, 2026-06-19
-    section Sprint 2 (Days 8-14)
-    Ratio Engine & Capital Allocation   :s2, 2026-06-20, 2026-06-26
-    section Sprint 3 (Days 15-21)
-    Screener & Peer Percentile Engine   :s3, 2026-06-27, 2026-07-03
-    section Sprint 4 (Days 22-28)
-    Streamlit Dashboard & Valuation     :s4, 2026-07-04, 2026-07-10
-    section Sprint 5 (Days 29-35)
-    ReportLab PDF Tearsheet Engine      :s5, 2026-07-11, 2026-07-17
-    section Sprint 6 (Days 36-45)
-    K-Means ML & FastAPI Backend        :s6, 2026-07-18, 2026-07-28
-```
-
-### 📅 45-Day Master Timeline Breakdown
-
-| Sprint | Internship Duration | Actual Dates | Key Milestones & Deliverables |
+| Sprint | Days | Dates | Key Focus & Deliverables |
 | :--- | :--- | :--- | :--- |
-| 🔹 **Sprint 1** | Days 1 – 7 | **June 13 – June 19** | Data Ingestion Engine, SQLite Schema, 16-Rule Data Quality Validator |
-| 🔹 **Sprint 2** | Days 8 – 14 | **June 20 – June 26** | 17 Ratio KPIs, 8-Pattern Capital Allocation Matrix, Composite Quality Rating |
-| 🔹 **Sprint 3** | Days 15 – 21 | **June 27 – July 3** | Analyst Screener Engine (15 Metrics), 11 Industry Peer Percentile Rankings |
-| 🔹 **Sprint 4** | Days 22 – 28 | **July 4 – July 10** | 8-Screen Interactive Streamlit Web Platform, Intrinsic & Relative Valuation |
-| 🔹 **Sprint 5** | Days 29 – 35 | **July 11 – July 17** | Automated ReportLab PDF Engine (89 Company Tearsheets, Portfolio Summary) |
-| 🔹 **Sprint 6** | Days 36 – 45 | **July 18 – July 28** | Unsupervised K-Means ML Clustering, FastAPI REST API (16 Endpoints), 124 Tests |
+| **Sprint 1** | Days 1–7 | June 13 – June 19 | Data Ingestion Engine, SQLite Database Schema, 16-Rule Data Quality Validator |
+| **Sprint 2** | Days 8–14 | June 20 – June 26 | 17 Ratio KPIs, 8-Pattern Capital Allocation Matrix, Composite Quality Rating |
+| **Sprint 3** | Days 15–21 | June 27 – July 3 | Dynamic Financial Screener, 11-Industry Peer Percentiles, Polar Radar Plots |
+| **Sprint 4** | Days 22–28 | July 4 – July 10 | 8-Screen Interactive Streamlit Web Portal, DCF & Relative Valuation Models |
+| **Sprint 5** | Days 29–35 | July 11 – July 17 | ReportLab PDF Publishing Engine (89 Company Tearsheets, Portfolio Summary) |
+| **Sprint 6** | Days 36–45 | July 18 – July 28 | Unsupervised K-Means ML Clustering, FastAPI REST API (16 Endpoints), 124 Tests |
+
+---
 
 ### 🔹 Sprint 1 (Days 1–7: June 13th – June 19th): Data Ingestion & Relational Database Architecture
 * Ingested 7 core financial spreadsheets and 5 supporting datasets into a structured SQLite database (`data/nifty100.db`).
@@ -89,22 +69,7 @@ gantt
 
 ## 🌐 Web Application Architecture (The 8 Portal Screens)
 
-The live web portal ([bluestock-nifty-100-financial-intelligence-platform.streamlit.app](https://bluestock-nifty-100-financial-intelligence-platform.streamlit.app/)) provides an 8-screen workspace:
-
-```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                      Nifty 100 Financial Intelligence Portal                    │
-├─────────────────────────────────────────────────────────────────────────────────┤
-│  [1] Executive Overview   │ High-level KPIs, Sector Donut, Top-5 Quality Leaders│
-│  [2] Company Explorer     │ 10-Yr Financial Trends, Dual-Axis Charts, Pros/Cons │
-│  [3] Financial Screener   │ 10 Slider Metrics, 6 One-Click Presets, CSV Export  │
-│  [4] Peer Comparison      │ Sector Matrices, Percentile Ranks, Polar Radar Plot │
-│  [5] Trend Analysis       │ Multi-Metric YoY % Overlays, 10-Yr Historical Lines │
-│  [6] Sector Analysis      │ 3D Bubble Chart (Sales vs ROE vs MCap), Sub-sectors │
-│  [7] Capital Allocation   │ Interactive Plotly Treemap of 8 Corporate Archetypes│
-│  [8] Annual Reports       │ Direct BSE India PDF Filing Repository (FY15-FY24)  │
-└─────────────────────────────────────────────────────────────────────────────────┘
-```
+The live web portal ([bluestock-nifty-100-financial-intelligence-platform.streamlit.app](https://bluestock-nifty-100-financial-intelligence-platform.streamlit.app/)) provides an 8-screen interactive workspace:
 
 ### 🏛️ Screen 1: Executive Overview
 * **Portfolio Macro Metrics**: Highlights average portfolio ROE %, median P/E, median D/E, median 5-year Sales CAGR, total tracked constituents, and total debt-free blue chips.

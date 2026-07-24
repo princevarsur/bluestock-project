@@ -29,19 +29,31 @@ gantt
     title Project Nifty 45-Day Sprint Roadmap (13th June – 28th July)
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
+    todayMarker off
     section Sprint 1 (Days 1-7)
-    Data Ingestion & DQ Validation      :active, s1, 2026-06-13, 2026-06-19
+    Data Ingestion & DQ Validation      :s1, 2026-06-13, 2026-06-19
     section Sprint 2 (Days 8-14)
-    Ratio Engine & Capital Allocation   :active, s2, 2026-06-20, 2026-06-26
+    Ratio Engine & Capital Allocation   :s2, 2026-06-20, 2026-06-26
     section Sprint 3 (Days 15-21)
-    Screener & Peer Percentile Engine   :active, s3, 2026-06-27, 2026-07-03
+    Screener & Peer Percentile Engine   :s3, 2026-06-27, 2026-07-03
     section Sprint 4 (Days 22-28)
-    Streamlit Dashboard & Valuation    :active, s4, 2026-07-04, 2026-07-10
+    Streamlit Dashboard & Valuation     :s4, 2026-07-04, 2026-07-10
     section Sprint 5 (Days 29-35)
-    ReportLab PDF Tearsheet Engine     :active, s5, 2026-07-11, 2026-07-17
+    ReportLab PDF Tearsheet Engine      :s5, 2026-07-11, 2026-07-17
     section Sprint 6 (Days 36-45)
-    K-Means ML & FastAPI REST Backend  :active, s6, 2026-07-18, 2026-07-28
+    K-Means ML & FastAPI Backend        :s6, 2026-07-18, 2026-07-28
 ```
+
+### 📅 45-Day Master Timeline Breakdown
+
+| Sprint | Internship Duration | Actual Dates | Key Milestones & Deliverables |
+| :--- | :--- | :--- | :--- |
+| 🔹 **Sprint 1** | Days 1 – 7 | **June 13 – June 19** | Data Ingestion Engine, SQLite Schema, 16-Rule Data Quality Validator |
+| 🔹 **Sprint 2** | Days 8 – 14 | **June 20 – June 26** | 17 Ratio KPIs, 8-Pattern Capital Allocation Matrix, Composite Quality Rating |
+| 🔹 **Sprint 3** | Days 15 – 21 | **June 27 – July 3** | Analyst Screener Engine (15 Metrics), 11 Industry Peer Percentile Rankings |
+| 🔹 **Sprint 4** | Days 22 – 28 | **July 4 – July 10** | 8-Screen Interactive Streamlit Web Platform, Intrinsic & Relative Valuation |
+| 🔹 **Sprint 5** | Days 29 – 35 | **July 11 – July 17** | Automated ReportLab PDF Engine (89 Company Tearsheets, Portfolio Summary) |
+| 🔹 **Sprint 6** | Days 36 – 45 | **July 18 – July 28** | Unsupervised K-Means ML Clustering, FastAPI REST API (16 Endpoints), 124 Tests |
 
 ### 🔹 Sprint 1 (Days 1–7: June 13th – June 19th): Data Ingestion & Relational Database Architecture
 * Ingested 7 core financial spreadsheets and 5 supporting datasets into a structured SQLite database (`data/nifty100.db`).

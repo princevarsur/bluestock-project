@@ -159,9 +159,4 @@ tests/kpi/test_screener.py        .....  [100%]
 
 ---
 
-## 👨‍💻 Author & Credits
 
-* **Developer**: Rishi Srivastava
-* **Project**: Bluestock Internship — Project Nifty (45-Day Deliverable Challenge)
-* **Live App**: [https://bluestock-nifty-100-financial-intelligence-platform.streamlit.app/](https://bluestock-nifty-100-financial-intelligence-platform.streamlit.app/)
-* **GitHub Repository**: [https://github.com/Mercer18/Bluestock-Project-Nifty](https://github.com/Mercer18/Bluestock-Project-Nifty)
